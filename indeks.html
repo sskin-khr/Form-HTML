@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Biodata Sakin Khair</title>
+</head>
+
+<body>
+    <form>
+        <h2 align="center">FORM BIODATA SAKIN KHAIR</h2>
+
+        <table align="center" cellpadding="5">
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text" name="tempat_lahir"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="tanggal_lahir"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama">
+                        <option value=""></option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bahasa yang Dikuasai</td>
+                <td>
+                    <input type="checkbox" name="bahasa" value="Indonesia"> Indonesia
+                    <input type="checkbox" name="bahasa" value="Inggris"> Inggris
+                    <input type="checkbox" name="bahasa" value="Arab"> Arab
+                    <input type="checkbox" name="bahasa" value="Mandarin"> Mandarin
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Foto Muka 3x4:</td>
+                <td><input class="form-control form-control-sm" id="formFileSm" type="file"></td>
+            </tr>
+            <tr>
+                <td>No. HP (format: 0812345678):</td>
+                <td><input type="text" name="no_hp" pattern="[0-9]{10,13}"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
